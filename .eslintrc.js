@@ -3,9 +3,11 @@ module.exports = {
     env: {
         node: true,
     },
-    extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+    plugins: ['prettier'],
+    extends: 'react-app',
     parserOptions: {
         parser: 'babel-eslint',
+        sourceType: 'module',
     },
     rules: {
         'no-unused-vars': 'warn',
